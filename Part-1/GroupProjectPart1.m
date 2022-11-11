@@ -38,7 +38,6 @@ sound(y,Fs)
 function shifted = freqShift(xt,Fs,f0)
     Xk = fft(xt);                                   % convert to frequency domain
     N = length(Xk);                                 % get the sequence length
-                                       % shift by this frequency value
     shift = round( f0 / (Fs/N) );                   % shift by this many points
 
     shiftRight = zeros( 1, N/2 );                   % empty array to store right values
