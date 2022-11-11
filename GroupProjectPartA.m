@@ -13,7 +13,7 @@ f0 = 30;                                % frequency (Hz) to shift by
 y = freqShift(x, Fs, f0);               % apply frequency shift
 
 %-----------------------------------------------------------------
-% Task 1: Adjust all plots so that they display meaningful graphs.
+% Task 1A: Adjust all plots so that they display meaningful graphs.
 % For example, the time domain plot displays too many cycles. 
 subplot(221);
 plot(x);
@@ -49,7 +49,7 @@ function shifted = freqShift(xt,Fs,f0)
         shiftAll = [shiftRight shiftLeft];          % concatenate both sequences
     else
         %-------------------------------------------
-        % Task 2: write codes for shift < 0
+        % Task 1B: write codes for shift < 0
         % place your codes here
 
         %-------------------------------------------
