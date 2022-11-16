@@ -31,7 +31,7 @@ plot(abs(fft(y)));
 disp('Playing audio. Press any key (such as Enter) to continue...')
 sound(x,Fs)
 pause
-text = ['Playing audio shifted by ', num2str(freq), ' Hz.'];
+text = ['Playing audio shifted by ', num2str(f0), ' Hz.'];
 disp(text)
 sound(y,Fs)
 
