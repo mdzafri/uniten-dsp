@@ -1,3 +1,7 @@
+% This code is to "transmit" an audio. The "transmission" process will add noise to the original audio.
+% Three new audio files will be generated and saved.
+% DO NOT CHANGE/EDIT this code.
+
 clc
 
 disp('Input only numbers. Press ENTER to cancel.');
