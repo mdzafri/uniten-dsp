@@ -9,7 +9,7 @@ x = 0.5 * cos(2*pi*f_C*n*Ts);           % time domain tone
 
 % [x,Fs] = audioread('C_chord.m4a');      %read the audio file
 
-f0 = 30;                                % frequency (Hz) to shift by
+f0 = 25;                                % frequency (Hz) to shift by
 y = freqShift(x, Fs, f0);               % apply frequency shift
 
 %-----------------------------------------------------------------
@@ -27,7 +27,7 @@ subplot(224);
 plot(abs(fft(y)));
 %-----------------------------------------------------------------
 
-% Display on command window
+% Display on the command window
 disp('Playing audio. Press any key (such as Enter) to continue...')
 sound(x,Fs)
 pause
@@ -49,7 +49,7 @@ function shifted = freqShift(xt,Fs,f0)
     else
         %-------------------------------------------
         % Task 1B: write codes for shift < 0
-        % place your codes here
+        % Place your codes here
 
         %-------------------------------------------
     end
